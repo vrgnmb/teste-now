@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto');
+
+body,html{padding:0;margin:0}
+header{
+	background-repeat: no-repeat;
+	background-image: url(img/manga.jpg);
+	background-size: 100%;
+	background-position: center center;
+	height: 700px;
+	opacity:1;
+}
+
+.container-header{
+	position:absolute;
+	display:block;
+	width:100%;
+	z-index:3;
+	top:0;
+}
+
+.opacidade{
+	width: 100%;
+	height: 700px;
+	background-color: #000000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+.titulo{
+	font-family: 'Oswald', sans-serif;
+	font-size: 7em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
+	margin: 0px;
+	margin-top: 200px;
+	color: #ffffff;
+
+	&:after, &:before{
+		content: '\2022';
+		font-size: 0.5em;
+		position: relative;
+		top:-20px;
+	}
+}
+
+.ofertas{
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 2em;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 0.1em;
+	margin: 0;
+}
+
+.data{
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 2em;
+	text-align: right;
+	color: #ffffff;
+	position: absolute;
+    right: 10px;
+    top: -25px;
+}
+
+.manga-palmer{
+	position: absolute;
+    color: #ffffff;
+    left: 10px;
+    bottom: -300px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+
+}
+
+.container-img{
+	height:300px;
+}
+
+
+
+h4{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+
+.titulo-receita{
+	font-size: 2.5em;
+	letter-spacing: -1px;
+	text-align: center;
+	margin-bottom: 5px;
+	&:before,&:after{
+		content: '\2022';
+		margin: 0 10px 0;
+		font-size: 0.8em;
+		position: relative;
+		top:-5px;
+		display:inline-block;
+	}
+}
+
+.linha-fina{
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	margin: 10px auto;
+	width: 80%;
+	text-align: center;
+}
+.container-receita{
+		text-align: center;
+		margin-top: 50px;
+
+	.subtitulo-receita{
+		background-color: #000;
+		color: #FFF;
+		display: inline-block;
+		line-height: 100px;
+		text-align: center;
+		margin: 20px auto;
+		position: relative;
+		padding-right: 2px;
+		font-size:2.3em;
+		font-family: "Oswald";
+		text-transform: uppercase;
+		span{
+			position: relative;	
+			z-index:5;	
+			background-color: transparent;
+			width: 20px;
+	    	text-indent: -25px;
+	    	display:inline-block;
+	    	left: -5px;
+		}
+		
+		span:last-child{
+			left: 35px;
+		}
+
+		&:after,&:before{
+			content: '';
+		    position: absolute;
+		    width: 0;
+		    height: 0;
+		    border-left: 50px solid transparent;
+		    border-right: 50px solid transparent;
+		    border-top: 52px solid #000;
+		    clear: both;
+		    top: 24px;
+		    transform: rotate(-90deg);
+		    right: -76px;
+		}
+
+		&:before{
+		    transform: rotate(90deg);
+		    left: -76px;
+		}
+	}
+}
+
+.receita{
+	margin: 0 auto;
+	width: 60%;
+
+	& > div {
+		display: flex;
+		justify-content: space-around;
+
+		& > div {
+			display:inline-block;
+			width: 50%;
+		}
+	}
+
+	ul{
+		margin-top: -20px;
+
+		li{
+			font-family: 'Roboto';
+			font-size: 0.9em;
+			line-height: 20px;
+			margin: 5px auto;
+			padding: 0;
+			margin-left: -20px;
+
+		}
+	}
+}
+
+.container-receita-border{
+	width: 80%;
+    margin: 0 auto;
+
+	h4{
+		border-bottom: 1px solid #000;
+		padding: 5px 20px;
+		clear: both;
+		margin-bottom: 0;
+	}
+	ul{
+		float: left;
+		width: 400px;
+	}
+	li{
+		font-size: 1em;
+		font-style: italic;
+		margin: 5px 0;
+	}
+
+	ul:last-child{
+		width: auto;
+		margin-bottom: 100px;
+	}
+}
+
+.alem{
+	clear: both;
+}
+
+.categoria{
+	width: 79%;
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 20px;
+}
+
+.categoria2{
+	width: 49%;
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: 20px;
+}
+
+.container-categoria{
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.produtos{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+
+.produtos2{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.titulo-categoria{
+	margin: 0;
+    padding: 5px 20px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    color: rgb(110, 110, 100);
+    font-size: 2em;
+}
+
+.descricao-categoria{
+	margin: 0;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1em;
+
+}
+
+h5 {
+	width: 150px;
+	text-align: left;
+	margin: 0;
+	color: #333;
+}
+
+.diversos{
+	margin: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 0.8em;
+	text-align: left;
+	font-style: italic;
+}
+
+.descricao-produto{
+	display: inline;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
+
+footer{
+	background-color:#000000;
+	margin-bottom:0;
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+}
+
+.conteudo-esquerda{
+	width: 20%;
+	margin-left: 50px;
+	text-align: left;
+	margin-top: 35px;
+
+	>p{
+		color: #fff;
+		font-family: 'Roboto';
+		padding-top: 20px;
+	}
+}
+
+.conteudo-direita{
+	width: 30%;
+	margin-right: 50px;
+    text-align: right;
+    padding-top: 110px;
+	>p{
+		color: #fff;
+		font-family: 'Roboto';
+	}
+}
+
+.pagamento{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.formas-pagamento{
+	margin-bottom: 60px;
+	font-size: 0.9em;
+}
+
+.contato{
+	padding-bottom: 20px;
+}
+
+.alem{
+	border: 3px solid #000;
+	text-align: center;
+	padding: 5px;
+	width: 70%;
+	margin: 10px auto;
+	position: relative;
+	top: 20px;
+	margin-bottom: 50px;
+
+	img{
+		margin-top: 30px;
+	}
+	.thin-border{
+		border: 1px solid #000;
+		padding: 20px;
+	}
+
+	p{
+		padding: 0 60px;
+		font-size: 1.5em;
+		line-height: 50px;
+		font-family: 'Playfair Display', serif;
+		font-sytle: italic;
+	}
+}
+section{clear:both;}
